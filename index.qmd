@@ -1,0 +1,27 @@
+---
+title: "Reproducible Research in R"
+subtitle: "Courses and resources for all the r-cubed websites."
+---
+
+{{< include includes/_wip.qmd >}}
+
+## Courses
+
+-   [`r-cubed-intro`](https://r-cubed-intro.rostools.org/): An
+    introductory workshop on modern data analyses and workflows.
+-   [`r-cubed-intermediate`](https://r-cubed-intermediate.rostools.org/):
+    An intermediate workshop on modern approaches and workflows to
+    processing data.
+-   [`r-cubed-advanced`](https://r-cubed-advanced.rostools.org/): An
+    advanced workshop on creating collaborative and automated analysis
+    pipelines.
+
+## Resources
+
+-   [Guides](https://guides.rostools.org/): Guides for instructors,
+    helpers, admin, as well as common instructions for participants.
+-   [`r3`](https://gitlab.com/rostools/r3/): A helper R package for
+    setting up participants computers, running checks, and installing
+    necessary packages for the courses.
+-   [`r3admin`](https://github.com/rostools/r3admin/): A helper R
+    package for doing admin tasks for the courses.
