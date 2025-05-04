@@ -2,7 +2,7 @@
     just --list --unsorted
 
 # Run all recipes
-run-all: install-dependencies spell-check style build-site 
+run-all: install-dependencies spell-check style build-site
 
 # Install package dependencies
 install-dependencies:
@@ -10,16 +10,16 @@ install-dependencies:
   pak::pak(ask = FALSE)
 
 # Check spelling of Markdown files
-spell-check: 
+spell-check:
   #!/usr/bin/Rscript
   files <- fs::dir_ls(here::here(), recurse = TRUE, regexp = "*\\.(md|qmd|Rmd)")
   spelling::spell_check_files(files)
 
 # Style all R code
-style: 
+style:
   #!/usr/bin/Rscript
   styler::style_dir(here::here())
 
 # Build pkgdown website
-build-site: 
+build-site:
   quarto render
